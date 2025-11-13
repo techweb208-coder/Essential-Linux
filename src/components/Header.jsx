@@ -1,14 +1,15 @@
-import React from 'react';
+import { Link } from "react-router-dom";
 
-export default function Header() {
+function Header() {
   return (
     <header className="header">
-      <h1>🐧 Essential Linux</h1>
+      <h1 className="logo">Essential Linux</h1>
       <nav>
-        <a href="#sobre">Home</a>
-        <a href="#vantagens">Vantagens</a>
-        <a href="#download">Download</a>
+        <Link to="/">Início</Link>
+        <Link to="/contato">Contato</Link>
       </nav>
     </header>
   );
 }
+
+export default Header;
